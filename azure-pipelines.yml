@@ -7,6 +7,12 @@ trigger:
 - master
 
 pool:
+- task: AzureCLI@2
+  inputs:
+    azureSubscription: 'Pay-As-You-Go-bhaskar(00e50ed8-8092-412e-b717-6f7dd43d9b31)'
+    scriptType: 'bash'
+    scriptLocation: 'inlineScript'
+    inlineScript: 'ls -ltr'
   vmImage: 'ubuntu-latest'
 
 steps:
