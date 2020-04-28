@@ -20,7 +20,7 @@ steps:
   displayName: 'Run a multi-line script'
 - task: AzureKeyVault@1
   inputs:
-    azureSubscription: 'Pay-As-You-Go-bhaskar(00e50ed8-8092-412e-b717-6f7dd43d9b31)'
+    azureSubscription: 'azure-resource'
     KeyVaultName: 'nexususer'
     SecretsFilter: '*'
 - task: Bash@3
