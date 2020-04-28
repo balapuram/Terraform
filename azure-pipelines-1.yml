@@ -29,7 +29,5 @@ steps:
       script: |
         # Write your commands here
         
-        echo 'Hello world'
-        
-        echo $SQLPassword
+        echo '${SQLPassword}'
 
